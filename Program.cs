@@ -225,6 +225,7 @@ namespace lab2
                 Console.WriteLine(tuple3);
                 return;
             }
+            Console.WriteLine("---------------------------------");
             Console.ReadKey();
 
             LocFunc2();
@@ -232,19 +233,35 @@ namespace lab2
 
             void LocFunc2()
             {
-                checked
+                try
                 {
-                    int i2 = int.MaxValue;
+                    checked
+                    {
+                        int i2 = int.MaxValue;
+                    }
+                }
+                catch
+                {
+
                 }
             }
 
             void LocFunc3()
             {
-                unchecked
+                try
                 {
-                    int i3 = int.MaxValue;
+                    unchecked
+                    {
+                        int i3 = int.MaxValue;
+                    }
+                }
+                catch
+                {
+
                 }
             }
+            Console.WriteLine("---------------------------------");
+            Console.ReadKey();
         }
     }
 }
