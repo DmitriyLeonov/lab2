@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace lab2
 {
@@ -49,12 +46,12 @@ namespace lab2
                 isAalive.ToString(), bit, bit1, n1, n2, i, ui, l, ul, f, d, dc, a, str, obj);
             
             long c1 = i;
-            Single h1 = ul;
+            float h1 = ul;
             decimal d1 = l;
             uint e1 = bit;
             long a1 = bit1;
             long c2 = (long)i;
-            Single h2 = (Single)ul;
+            float h2 = (float)ul;
             decimal d2 = (decimal)l;
             uint e2 = (uint)bit;
             long a2 = (long)bit1;
@@ -112,7 +109,7 @@ namespace lab2
             Console.WriteLine("---------------------------------");
             Console.ReadLine();
             Console.WriteLine("Относится ли строка str2 к типу null? : ");
-            Console.WriteLine(str2 == null); // True
+            Console.WriteLine(string.IsNullOrEmpty(str2)); // True
             Console.WriteLine("Является ли строка str2 пустой: ");
             Console.WriteLine(str2 == ""); // False
             Console.WriteLine("Присвоим строке-null значение 123: ");
@@ -188,7 +185,7 @@ namespace lab2
             var nemas = new[] { 1, 2, 3, 4 };
             var nestr = "String";
 
-            (int, string, char, string, ulong) tuple = (one: 10, two: "Hello", thre: '4', four: "world", five: 111);
+            (int, string, char, string, ulong) tuple = ( 10, "Hello", '4', "world", 111);
 
             Console.WriteLine(tuple);
             Console.WriteLine("---------------------------------");
