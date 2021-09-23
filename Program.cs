@@ -155,7 +155,7 @@ namespace lab2
             Console.WriteLine("length= " + strmas.GetLength(0) + "\n Element number");
             int numb = Convert.ToInt32(Console.ReadLine());
             string repl = Console.ReadLine();
-            strmas[numb - 1] = repl;
+            strmas[numb] = repl;
             for ( i = 0; i < strmas.GetLength(0); i++)
                 Console.Write("\t" + strmas[i] + "\t");
             Console.WriteLine();
