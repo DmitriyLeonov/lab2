@@ -225,10 +225,10 @@ namespace lab2
             Console.WriteLine("---------------------------------");
             Console.ReadKey();
 
-            LocFunc2();
-            LocFunc3();
+            CheckedFunc();
+            UncheckedFunc();
 
-            void LocFunc2()
+            void CheckedFunc()
             {
                 try
                 {
@@ -243,7 +243,7 @@ namespace lab2
                 }
             }
 
-            void LocFunc3()
+            void UncheckedFunc()
             {
                 try
                 {
